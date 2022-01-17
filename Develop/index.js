@@ -23,6 +23,7 @@ var interval = setInterval(function () {
 
 function initPage() {
     
+    console.log("Current Hour + hour");
     var init9 = JSON.parse(localStorage.getItem("09:00AM"));
     nineAM.val(init9);
 
@@ -49,4 +50,21 @@ function initPage() {
 
     var init5 = JSON.parse(localStorage.getItem("05:00PM"));
     nineAM.val(init5);
+}
+
+function background () {
+
+$(".form-control").each(function () {
+    var timeTest = parseInt($(this).attr("id"));
+    hour = parseInt(hour);
+    console.log(timeTest);
+    console.log(hour);
+    if (hour > timeTest) {
+        $(this).addClass("past");
+    } else if (hour < timeTest) {
+        $(this).addClass("future");
+    } else {
+        $(this).addClass("present");
+    }
+});
 }
