@@ -23,33 +23,33 @@ var interval = setInterval(function () {
 
 function initPage() {
     
-    console.log("Current Hour + hour");
+    console.log("Current Hour" + hour);
     var init9 = JSON.parse(localStorage.getItem("09:00AM"));
     nineAM.val(init9);
 
     var init10 = JSON.parse(localStorage.getItem("10:00AM"));
-    nineAM.val(init10);
+    tenAM.val(init10);
 
     var init11 = JSON.parse(localStorage.getItem("11:00AM"));
-    nineAM.val(init11);
+    elevenAM.val(init11);
 
     var init12 = JSON.parse(localStorage.getItem("12:00PM"));
-    nineAM.val(init12);
+    twelveAM.val(init12);
 
     var init1 = JSON.parse(localStorage.getItem("01:00PM"));
-    nineAM.val(init1);
+    onePM.val(init1);
 
     var init2 = JSON.parse(localStorage.getItem("02:00PM"));
-    nineAM.val(init2);
+    twoPM.val(init2);
 
     var init3 = JSON.parse(localStorage.getItem("03:00PM"));
-    nineAM.val(init3);
+    threePM.val(init3);
 
     var init4 = JSON.parse(localStorage.getItem("04:00PM"));
-    nineAM.val(init4);
+    fourPM.val(init4);
 
     var init5 = JSON.parse(localStorage.getItem("05:00PM"));
-    nineAM.val(init5);
+    fivePM.val(init5);
 }
 
 function background () {
