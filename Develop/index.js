@@ -10,3 +10,6 @@ var twoPM = $('#2PM');
 var threePM = $('#3PM');
 var fourPM = $('#4PM');
 var fivePM = $('#5PM');
+var hour = moment().hours();
+var userInput;
+var hourSpan;
