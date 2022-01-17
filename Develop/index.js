@@ -20,3 +20,33 @@ var interval = setInterval(function () {
     + momentNow.format('dddd'));
     $('#currentDay').html(currentDate + " " + momentNow.format('hh:mm:ss A'));
 }, 100);
+
+function initPage() {
+    
+    var init9 = JSON.parse(localStorage.getItem("09:00AM"));
+    nineAM.val(init9);
+
+    var init10 = JSON.parse(localStorage.getItem("10:00AM"));
+    nineAM.val(init10);
+
+    var init11 = JSON.parse(localStorage.getItem("11:00AM"));
+    nineAM.val(init11);
+
+    var init12 = JSON.parse(localStorage.getItem("12:00PM"));
+    nineAM.val(init12);
+
+    var init1 = JSON.parse(localStorage.getItem("01:00PM"));
+    nineAM.val(init1);
+
+    var init2 = JSON.parse(localStorage.getItem("02:00PM"));
+    nineAM.val(init2);
+
+    var init3 = JSON.parse(localStorage.getItem("03:00PM"));
+    nineAM.val(init3);
+
+    var init4 = JSON.parse(localStorage.getItem("04:00PM"));
+    nineAM.val(init4);
+
+    var init5 = JSON.parse(localStorage.getItem("05:00PM"));
+    nineAM.val(init5);
+}
