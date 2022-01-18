@@ -34,7 +34,7 @@ function initPage() {
     elevenAM.val(init11);
 
     var init12 = JSON.parse(localStorage.getItem("12:00PM"));
-    twelveAM.val(init12);
+    twelve.val(init12);
 
     var init1 = JSON.parse(localStorage.getItem("01:00PM"));
     onePM.val(init1);
