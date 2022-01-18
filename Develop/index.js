@@ -5,8 +5,8 @@ var nineAM = $('#9AM');
 var tenAM = $('#10AM');
 var elevenAM = $('#11AM');
 var twelvePM = $('#12PM');
-var onePM = $('#1PM');
-var twoPM = $('#2PM');
+var onePM = $('#13PM');
+var twoPM = $('#14PM');
 var threePM = $('#3PM');
 var fourPM = $('#4PM');
 var fivePM = $('#5PM');
@@ -36,20 +36,20 @@ function initPage() {
     var init12 = JSON.parse(localStorage.getItem("12:00PM"));
     twelvePM.val(init12);
 
-    var init1 = JSON.parse(localStorage.getItem("01:00PM"));
-    onePM.val(init1);
+    var init13 = JSON.parse(localStorage.getItem("13:00PM"));
+    onePM.val(init13);
 
-    var init2 = JSON.parse(localStorage.getItem("02:00PM"));
-    twoPM.val(init2);
+    var init14 = JSON.parse(localStorage.getItem("14:00PM"));
+    twoPM.val(init14);
 
-    var init3 = JSON.parse(localStorage.getItem("03:00PM"));
-    threePM.val(init3);
+    var init15 = JSON.parse(localStorage.getItem("15:00PM"));
+    threePM.val(init15);
 
-    var init4 = JSON.parse(localStorage.getItem("04:00PM"));
-    fourPM.val(init4);
+    var init16 = JSON.parse(localStorage.getItem("16:00PM"));
+    fourPM.val(init16);
 
-    var init5 = JSON.parse(localStorage.getItem("05:00PM"));
-    fivePM.val(init5);
+    var init17 = JSON.parse(localStorage.getItem("17:00PM"));
+    fivePM.val(init17);
 }
 
 function background () {
