@@ -4,7 +4,7 @@ var currentHour = moment().format('h:mm:ss a');
 var nineAM = $('#9AM');
 var tenAM = $('#10AM');
 var elevenAM = $('#11AM');
-var twelveAM = $('#12AM');
+var twelvePM = $('#12PM');
 var onePM = $('#1PM');
 var twoPM = $('#2PM');
 var threePM = $('#3PM');
@@ -34,7 +34,7 @@ function initPage() {
     elevenAM.val(init11);
 
     var init12 = JSON.parse(localStorage.getItem("12:00PM"));
-    twelve.val(init12);
+    twelvePM.val(init12);
 
     var init1 = JSON.parse(localStorage.getItem("01:00PM"));
     onePM.val(init1);
@@ -68,3 +68,8 @@ $(".form-control").each(function () {
     }
 });
 }
+
+$(document).ready(function(){
+    initPage()
+    background()
+})

@@ -24,12 +24,16 @@ textarea {
   margin-bottom: 5rem;
 }
 
-.description {
-  white-space: pre-wrap;
+.input-group-text {
+  border: none;
 }
 
 .form-control {
   border: none;
+}
+
+.description {
+  white-space: pre-wrap;
 }
 
 .time-block {
