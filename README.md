@@ -17,7 +17,7 @@ Appearance: the following image shows the website's appearance and functionality
 
 Usage
 
-The following URL will take you directly to the page:
+The following URL will take you directly to the page: https://josephcurtis1999.github.io/CalendarApplication1/
 
 Credits 
 
