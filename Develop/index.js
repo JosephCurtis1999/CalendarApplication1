@@ -1,6 +1,8 @@
+// js moment to display the date and time in the correct format
 var currentDate = moment().format('dddd') + " " + moment().format("Do MMM YYYY");
 var currentHour = moment().format('h:mm:ss a');
 
+// variable for each timeblock, references the ID
 var nineAM = $('#9AM');
 var tenAM = $('#10AM');
 var elevenAM = $('#11AM');
@@ -14,6 +16,7 @@ var hour = moment().hours();
 var userInput;
 var hourSpan;
 
+// function to work with the time intervals set in the variables
 var interval = setInterval(function () {
     var momentNow = moment();
     $('#currentDay').html(momentNow.format('YYYY MMMM DD') + ' '
@@ -21,6 +24,7 @@ var interval = setInterval(function () {
     $('#currentDay').html(currentDate + " " + momentNow.format('hh:mm:ss A'));
 }, 100);
 
+// initialises the variables for each timeblock, interesting to note that to get this to work I had to write in digital format rather than 1pm, 2pm, 3pm etc
 function initPage() {
     
     console.log("Current Hour" + hour);
@@ -52,6 +56,7 @@ function initPage() {
     fivePM.val(init17);
 }
 
+// this function targets the form-control class and sets parameters for when to add the certain colour classes based on the time of day. e.g future adds the green class
 function background () {
 
 $(".form-control").each(function () {
