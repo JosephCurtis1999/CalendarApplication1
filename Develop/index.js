@@ -74,11 +74,15 @@ $(".form-control").each(function () {
 });
 }
 
+// can now save the events and refreshing the page allows the text to remain
 $(document).ready(function(){
     initPage()
     background()
 
     $(".saveBtn").on("click", function (){
-        
+        userInput = $(this).siblings(".form-control").val().trim();
+        hourSpan = $(this).siblings(".input-group-prepend").text().trim();
+        localStorage.setItem(hourSpan, JSON.stringify(userInput));
+
     })
 })
