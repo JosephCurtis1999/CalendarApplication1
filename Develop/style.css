@@ -5,6 +5,23 @@ body {
   height: 150vh;
 }
 
+/* used in header */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+  margin-bottom: 5rem;
+}
+
+/* used in timeblocks */
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
 /* used in timeblocks */
 textarea {
   background: transparent;
@@ -14,16 +31,6 @@ textarea {
   border: 1px solid black;
   padding: 10px;
   width: 80%;
-}
-
-/* used in header */
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-  margin-bottom: 5rem;
 }
 
 .input-group-text {
@@ -41,13 +48,6 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
-}
-
-/* used in timeblocks */
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
