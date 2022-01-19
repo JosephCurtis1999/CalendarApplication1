@@ -77,4 +77,8 @@ $(".form-control").each(function () {
 $(document).ready(function(){
     initPage()
     background()
+
+    $(".saveBtn").on("click", function (){
+        
+    })
 })
